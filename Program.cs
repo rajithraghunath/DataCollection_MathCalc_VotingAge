@@ -23,8 +23,6 @@ namespace DataCollection_MathCalc_VotingAge
             Console.ForegroundColor = ConsoleColor.Yellow;
             char userYN = 'Y'; Console.ResetColor();
 
-
-
             while (userYN == 'Y')
             {
 
@@ -32,9 +30,9 @@ namespace DataCollection_MathCalc_VotingAge
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 string inputA = Console.ReadLine();
-                int outputA;
+                double outputA;
 
-                while (!int.TryParse(inputA, out outputA))
+                while (!double.TryParse(inputA, out outputA))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number:");
                     inputA = Console.ReadLine();
@@ -42,18 +40,15 @@ namespace DataCollection_MathCalc_VotingAge
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 string inputB = Console.ReadLine();
-                int outputB;
+                double outputB;
 
-                while (!int.TryParse(inputB, out outputB))
+                while (!double.TryParse(inputB, out outputB))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number:");
                     inputB = Console.ReadLine();
                 }
 
                 Console.ResetColor();
-
-                //int a = Convert.ToInt32(Console.ReadLine());
-                //int b = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("\nChoose an operation: \n 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division \n 5. Power");
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -65,9 +60,6 @@ namespace DataCollection_MathCalc_VotingAge
                     Console.WriteLine("Invalid input. Please enter a valid number:");
                     choiceInput = Console.ReadLine();
                 }
-
-                //int choice = Convert.ToInt32(Console.ReadLine());
-
 
                 MathCalc mathCalc = new MathCalc();
 

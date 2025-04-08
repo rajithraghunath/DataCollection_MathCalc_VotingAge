@@ -8,38 +8,42 @@ namespace DataCollection_MathCalc_VotingAge
 {
     class MathCalc
     {
-        public void Addition(int a, int b)
+        public void Addition(double a, double b)
         {
-
             //return a + b;
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("The sum of {0} and {1} is: {2}", a, b, a + b);
+            double ansAdd = Math.Round((a + b),2);
+            Console.WriteLine("The sum of {0} and {1} is: {2}", a, b, ansAdd);
         }
 
-        public void Subtraction(int a, int b)
+        public void Subtraction(double a, double b)
         {
             //return a - b;
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("The difference of {0} and {1} is: {2}", a, b, a - b);
+            double ansSub = Math.Round((a - b), 2);
+            Console.WriteLine("The difference of {0} and {1} is: {2}", a, b, ansSub);
         }  
 
-        public void Multiplication(int a, int b)
+        public void Multiplication(double a, double b)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("The product of {0} and {1} is: {2}", a, b, a * b);
+            double ansMul = Math.Round((a * b), 2);
+            Console.WriteLine("The product of {0} and {1} is: {2}", a, b, ansMul);
         }   
-        public void Division(int a, int b)
+        public void Division(double a, double b)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("\nThe quotient of {0} and {1} is: {2}", a, b, a / b);
-            Console.WriteLine("The Remainder is: {0}", a % b);
-
+            double ansDiv = Math.Round((a / b), 2);
+            double ansRem = Math.Round((a % b), 2);
+            Console.WriteLine("\nThe quotient of {0} and {1} is: {2}", a, b, ansDiv);
+            Console.WriteLine("The Remainder is: {0}", ansRem);
         }
 
-        public void Power(int a, int b)
+        public void Power(double a, double b)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("The power of {0} and {1} is: {2}", a, b, Math.Pow(a, b));
+            double ansPow = Math.Round((Math.Pow(a, b)), 2);
+            Console.WriteLine("The power of {0} and {1} is: {2}", a, b, ansPow);
         }
     }
 }
