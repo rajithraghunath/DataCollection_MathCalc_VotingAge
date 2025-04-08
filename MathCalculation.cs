@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +32,7 @@ namespace DataCollection_MathCalc_VotingAge
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\nThe quotient of {0} and {1} is: {2}", a, b, a / b);
-            Console.WriteLine("The Remainder is ", a % b);
+            Console.WriteLine("The Remainder is: {0}", a % b);
 
         }
 
